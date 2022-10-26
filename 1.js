@@ -10,7 +10,19 @@ Ff
 群1077223830
 *******************************
 [rewrite_local]
-^http[s]?:\/\/uu.tuanyougou.com\/\/video\/registryUser.+$ url script-response-body https://raw.githubusercontent.com/2816143418/qx/main/1.js
+^http[s]?:\/\/uu.tuanyougou.com\/\/video\/registryUser.+$ url script-response-body tuanyougou.js
 [mitm] 
 hostname = *.tuanyougou.*
 *******************************
+Surge
+
+[Script]
+^http[s]?:\/\/uu.tuanyougou.com\/\/video\/registryUser.+$ requires-body=1,max-size=0,script-path=tuanyougou.js
+
+[MITM]
+hostname = *.tuanyougou.*
+
+*******************************/
+var obj = JSON.parse($response.body);
+    obj.data.userId= 9999;
+    $done({body: JSON.stringify(obj)});

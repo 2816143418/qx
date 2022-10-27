@@ -10,7 +10,7 @@ Ff
 群1077223830
 *******************************
 [rewrite_local]
-^http[s]?:\/\/uu.tuanyougou.com\/\/video\/registryUser.+$ url script-response-body tuanyougou.js
+^http[s]?:\/\/uu.tuanyougou.com\/\/video\/registryUser.+$ url script-response-body https://raw.githubusercontent.com/2816143418/qx/main/qx.js
 [mitm] 
 hostname = *.tuanyougou.*
 *******************************

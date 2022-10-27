@@ -6,7 +6,7 @@ Ff
 
 *******************************
 [rewrite_local]
-^http[s]?:\/\/uu.tuanyougou.com\/\/video\/registryUser.+$ url script-response-body https://raw.githubusercontent.com/2816143418/qx/main/qx.js
+^http[s]?:\/\/uu.tuanyougou.com\/\/video\/registryUser.+$ url script-response-body tuanyougou.js
 [mitm] 
 hostname = *.tuanyougou.*
 *******************************
@@ -20,8 +20,6 @@ hostname = *.tuanyougou.*
 
 *******************************/
 var obj = JSON.parse($response.body);
-    obj.data.{
-  code=  653042
-  }
-};
+    obj.data.userId= 9999;
+obj.data.endTime= "5555;
     $done({body: JSON.stringify(obj)});

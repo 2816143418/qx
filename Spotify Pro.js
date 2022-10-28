@@ -1,4 +1,4 @@
-Spotify Pro解锁部分功能，音质不能设置超高  app版本8.7.78
+Spotify Pro APP版本8.7.78
 下载地址：http://mtw.so/6qFvqC
 hostname= spclient.wg.spotify.com
 ****************************************/

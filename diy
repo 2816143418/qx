@@ -2,6 +2,7 @@ host, mp.weixin.qq.com, reject
 host, wxsnsdy.wxs.qq.com, reject
 host, wxsnsdythumb.wxs.qq.com, reject
 host, pack.pglstatp-toutiao.com, reject
+host-suffix, tiktokcdn.com, proxy
 host-suffix, tik-tokapi.com, proxy
 host-suffix, byteoversea.com, proxy
 host-suffix, tiktokv.com, proxy

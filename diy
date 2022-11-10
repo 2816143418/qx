@@ -6,3 +6,4 @@ host-suffix, tiktokcdn.com, proxy
 host-suffix, tik-tokapi.com, proxy
 host-suffix, byteoversea.com, proxy
 host-suffix, tiktokv.com, proxy
+host-suffix, github.com, proxy
